@@ -4,6 +4,11 @@
 
 See [Radix dApp Toolkit repository](https://github.com/radixdlt/radix-dapp-toolkit) for more information
 
+## Install
+
+Install dependencies by running
+`yarn`
+
 ## Available Scripts
 
 In the project directory, you can run:
