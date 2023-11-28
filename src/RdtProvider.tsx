@@ -1,12 +1,10 @@
-import { RdtContext } from "./rdt-context";
-import { Rdt } from "./types";
+import React, { ReactNode } from 'react'
+import { RdtContext, Radix } from './rdt-context'
 
-export const RdtProvider = (
-  input: React.PropsWithChildren<{
-    value: Rdt;
-  }>
-) => (
-  <RdtContext.Provider value={input.value}>
-    {input.children}
-  </RdtContext.Provider>
-);
+export const RdtProvider = ({
+  value,
+  children,
+}: {
+  value: Radix
+  children: ReactNode
+}) => <RdtContext.Provider value={value}>{children}</RdtContext.Provider>

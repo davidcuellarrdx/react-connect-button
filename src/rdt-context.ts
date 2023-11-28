@@ -1,4 +1,6 @@
-import { createContext } from "react";
-import { Rdt } from "./types";
+import { createContext } from 'react'
+import { RadixDappToolkit } from '@radixdlt/radix-dapp-toolkit'
 
-export const RdtContext = createContext<Rdt | null>(null);
+export type Radix = ReturnType<typeof RadixDappToolkit>
+
+export const RdtContext = createContext<Radix | null>(null)

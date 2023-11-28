@@ -1,4 +1,4 @@
-import { RadixDappToolkit } from "@radixdlt/radix-dapp-toolkit";
+import { RadixDappToolkit, RadixNetwork } from "@radixdlt/radix-dapp-toolkit";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
@@ -8,21 +8,13 @@ import { RdtProvider } from "./RdtProvider";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <RdtProvider
-      value={RadixDappToolkit(
-        {
-          dAppName: "Radix dApp",
-          dAppDefinitionAddress:
-            "account_tdx_b_1pzv5m8xqy39jmjkk60jluwhrctcs4qpafrxs7rr54jwq0899y3",
-        },
-        (requestData) => {
-          requestData({
-            accounts: { quantifier: "atLeast", quantity: 1 },
-          });
-        },
-        {
-          networkId: 34,
-        }
-      )}
+      value={RadixDappToolkit({
+        dAppDefinitionAddress:
+          'account_tdx_2_12yu2cg9a93lypuyu999j82dh3cd69n9u3vu84jh3uv22ehjavwlrej', //Use your dAppDefinitionAddress
+        networkId: RadixNetwork.Stokenet, //RadixNetwork.Mainnet
+        applicationName: 'Radix Web3 dApp',
+        applicationVersion: '1.0.0',
+      })}
     >
       <App />
     </RdtProvider>

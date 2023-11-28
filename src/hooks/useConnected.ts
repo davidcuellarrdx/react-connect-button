@@ -1,7 +1,21 @@
-import { useRdtState } from "./useRdtState";
+import { useEffect, useState } from 'react'
+import { useRdt } from './useRdt'
 
 export const useConnected = () => {
-  const state = useRdtState();
+  const rdt = useRdt()
+  const [state, setState] = useState<
+    'pending' | 'success' | 'error' | 'default'
+  >('default')
 
-  return state?.connected ?? false;
-};
+  useEffect(() => {
+    const subscription = rdt.buttonApi.status$.subscribe((state) => {
+      setState(state)
+    })
+
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [rdt])
+
+  return state
+}

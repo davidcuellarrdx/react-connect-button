@@ -1,22 +1,31 @@
-# React - Radix dApp Toolkit
+# ReactTS - Radix dApp Toolkit
 
 ## About
 
-See [Radix dApp Toolkit repository](https://github.com/radixdlt/radix-dapp-toolkit) for more information
+This repository is a React TypeScript (ReactTS) project utilizing the Radix dApp Toolkit. For more detailed information, please refer to the [Radix dApp Toolkit repository](https://github.com/radixdlt/radix-dapp-toolkit).
 
-## Install
+### RDT Version
+Current version: radix-dapp-toolkit v1.3.1
 
-Install dependencies by running
-`yarn`
+## Installation
+
+To install dependencies, execute the following command:
+
+### `yarn`
+
 
 ## Available Scripts
 
-In the project directory, you can run:
+Within the project directory, you can execute the following scripts:
 
 ### `yarn dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+Open [http://localhost:5173](http://localhost:5173) in your web browser to view the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will automatically reload when changes are made.\
+You may also view any lint errors in the console.
+
+### Additional Information:
+
+Please ensure to update your dAppDefinitionAddress in `main.tsx` as needed.
