@@ -24,6 +24,8 @@ function App() {
   const sendTransaction = useSendTransaction();
   const connected = useConnected();
 
+  console.log(connected)
+
   const [selectedAccount, setSelectedAccount] = useState<number | null>(null);
   
   return (
