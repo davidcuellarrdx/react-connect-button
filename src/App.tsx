@@ -45,6 +45,9 @@ function App() {
       <div className="card">
         <radix-connect-button/>
       </div>
+      {connected !== 'default' &&
+      <h3> {connected} </h3>
+      }
       {persona.persona ? (
         <div>
           <h2>Persona: {persona.persona?.label}</h2>
