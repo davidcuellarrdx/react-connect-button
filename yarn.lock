@@ -135,9 +135,9 @@
   integrity sha512-9pMSwNkbVN+0+y3+zcuUTOO9PGrTB7/tv0TFtRildg29YW94nR6jC9A+SLEy7ovUzPYOrjJfAv72oJOHXyfS9g==
 
 "@radixdlt/connect-button@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@radixdlt/connect-button/-/connect-button-1.0.1.tgz#daf2744678dcd53e37f9b9e0aeab3749da9ecc3a"
-  integrity sha512-zKwQkIWW59iajQGhOBXB+x8H0iV/fx7+6/befmUwy+SpsKZ9dgQJz0q2wibaJkk1GES7+4IeziK32a7FB/RgUw==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@radixdlt/connect-button/-/connect-button-1.0.4.tgz#1a83774283f76d1a47f34ae1a06d815ba09beb3e"
+  integrity sha512-BXZ+qZEy9Ko22xpm7bUUakHAQ+le9t4DZjTM6sTPwrAo33iP9Rpi4QpzHWePy43Tey+w1h2oLWuM6GqnLFt0aQ==
   dependencies:
     lit "^2.7.5"
 
